@@ -1,8 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import products from "../products";
+// import products from "../products";
 
 export default function Productdescscreen() {
+  const products = []
   // const productID = match.params.id
   const { id } = useParams();
   const product = products.find((p) => String(p.id) === id);
